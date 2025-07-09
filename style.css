@@ -12,7 +12,8 @@ body{
     background-size: cover;*/
 
     /*background: color imagem position repeat/size*/
-    background: var(--bg-url) no-repeat top center/cover
+    background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
 
     }
     body * {
@@ -22,7 +23,7 @@ body{
 
     :root {
         --text-color: white;
-        --bg-url: url(assets/bg-desktop.jpg);
+        --bg-url: url(assets/bg-mobile.jpg);
         --stroke-color: rgba(255, 255, 255, 0.5);
         --surface-color: rgba(255, 255, 255, 0.1);
         --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -33,7 +34,7 @@ body{
 
     .light {
         --text-color: black;
-        --bg-url: url(assets/bg-desktop-light.jpg);
+        --bg-url: url(./assets/bg-mobile-light\ \(1\).jpg);
         --stroke-color: rgba(0, 0, 0, 0.5);
         --surface-color: rgba(0, 0, 0, 0.082);
         --surface-color-hover: rgba(0, 0, 0, 0.052);
@@ -42,13 +43,13 @@ body{
         
     }
 
-    #container0 {
+    #container {
         margin: auto;
-        width: 400px;
+        width: 100%;
+        max-width: 588px;
         border: 1px;
         text-align: center;
         padding-top: 56px;
-        
 
     }
 
@@ -89,11 +90,16 @@ body{
         z-index: 1;
         transform: translateY(-50%);
         
+        animation: slide-back 0.2s;
+
+    }
+
+    #switch button:hover {
+        outline: 8px solid var(--highlight-color);
     }
 
     .light #switch button {
-        right: 0;
-        left: initial;
+        animation: slide-in 0.4s forwards;
     }
 
     #switch span {
@@ -149,7 +155,7 @@ body{
     }
 
     #link {
-        width: 400px;
+        width: 100%px;
         margin: auto;
         
         
@@ -194,4 +200,31 @@ body{
 
     }
     
+    @media (min-width: 700px) {
+        :root {
+            --bg-url: url(./assets/bg-desktop.jpg);
+        }
+
+        .light {
+            --bg-url: url(./assets/bg-desktop-light.jpg)
+        }
+    }
+
+    @keyframes slide-in {
+        from {
+            left: 0;
+        }
+        to {
+            left: 50%;
+        }
+    }
+
+    @keyframes slide-back {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 0%;
+        }
+    }
     

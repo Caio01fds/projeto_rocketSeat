@@ -1,0 +1,49 @@
+{
+    // editor
+    "editor.wordWrap": "on",
+    "editor.fontSize": 18,
+    "editor.lineHeight": 30,
+    "editor.tabSize": 2,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.minimap.enabled": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "files.autoSave": "afterDelay",
+  
+    // explorer
+    "explorer.compactFolders": false,
+  
+    // workbench
+    "workbench.editor.enablePreview": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Omni",
+  
+    // prettier
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.enable": true,
+    "prettier.singleQuote": false,
+    "prettier.tabWidth": 2,
+    "prettier.semi": false,
+  
+    // terminal
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.profiles.windows": {
+      "Git Bash": {
+        "source": "Git Bash"
+      }
+    },
+    "terminal.integrated.defaultProfile.windows": "Git Bash"
+  }
+//   body * {
+//     font-family: 'Inter', sans-serif;
+//     color: var(--text-color);
+// }
+
+// :root {
+//     --text-color: white;
+//     --bg-url: url(./assets/bg-mobile.jpg);
+//     --stroke-color: rgba(255, 255, 255, 0.5);
+//     --surface-color: rgba(255, 255, 255, 0.05);
+//     --surface-color-hover: rgba(0, 0, 0, 0.02);
+//     --highlight-color: rgba(255, 255, 255, 0.2);
